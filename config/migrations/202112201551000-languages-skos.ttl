@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix atold: <http://publications.europa.eu/resource/authority/> .
+@prefix at: <http://publications.europa.eu/ontology/authority/> .
+@prefix mu: <http://mu.semte.ch/vocabularies/core/>.
+
+atold:language
+    mu:uuid "b0f920a0-a760-4055-a902-76c279ccd683";
+    at:prefLabel "Language"@en ;
+    at:table.id "language" ;
+    at:table.version.number "20211208-0" ;
+    a skos:ConceptScheme ;
+    rdfs:label "Language"@en ;
+    owl:versionInfo "20211208-0" ;
+    skos:prefLabel "Language"@en .
+
+<http://publications.europa.eu/resource/authority/language/ENG>
+    mu:uuid "83e5fcbf-3a11-410e-bbff-3805f4539af0";
+    at:authority-code "ENG" ;
+    at:deprecated "false" ;
+    at:op-code "ENG" ;
+    at:protocol-order "EU-08" ;
+    at:protocol.order "EU-08" ;
+    at:start.use "1950-05-09" ;
+    atold:op-code "ENG" ;
+    dc:identifier "ENG" ;
+    a skos:Concept ;
+    skos:inScheme atold:language ;
+    skos:prefLabel "Engels" .
+
+<http://publications.europa.eu/resource/authority/language/NLD>
+    mu:uuid "54420240-77cb-4c8e-af86-8e16daede234";
+    at:authority-code "NLD" ;
+    at:deprecated "false" ;
+    at:op-code "NLD" ;
+    at:protocol-order "EU-17" ;
+    at:protocol.order "EU-17" ;
+    at:start.use "1950-05-09" ;
+    atold:op-code "NLD" ;
+    dc:identifier "NLD" ;
+    a skos:Concept ;
+    skos:inScheme atold:language ;
+    skos:prefLabel "Nederlands" .
